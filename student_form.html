@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        #formID {
+            width: 50%;
+            background: url("image/1.jpg") 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <!-- <h1>Today Our Class is on <time datetime="18/02/2022 02:00">02:00</time></h1> -->
+        -->
+        <form action="sabeel.php" method="get" id="formID">
+            <fieldset>
+                <legend>Student Data</legend>
+                <label>Name</label>
+                <input type="text" name="name" required placeholder="eg: Amir Hayat"><br><br>
+                <label>Email <span style="color: red;">*</span></label>
+                <input type="email" required name="email" placeholder="*****@*****.com"><br><br>
+                <label>Password</label>
+                <input type="password" required name="pass"><br><br>
+                <label>Date of Birth</label>
+                <input type="date" required name="dob"><br><br>
+                <label>Country</label>
+                <select>
+                    <option>--Select--</option>
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>China</option>
+                    <option>Afghanistan</option>
+                </select><br><br>
+                <label>Remarks:</label>
+                <textarea>
+
+                </textarea><br><br>
+                <input type="submit" name="btn1" value="ADD">
+                <input type="reset" name="reset">
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        @keyframes webs {
+            0% {
+                /* transform: scale(1, 1); */
+            }
+
+
+            100% {
+
+                transform: matrix(0.707107, 0.707107, 0, 0, 0, 0);
+                // ScalX,SkewY,SKewX,ScalY, TranslateX,TrslateY
+            }
+
+        }
+
+        .container {
+
+            background-color: yellow;
+            width: 30px;
+            height: 30px;
+            padding: 20px;
+            border: 2px solid green;
+            border-radius: 40px;
+            animation-name: webs;
+            animation-duration: 0.3s;
+            /* animation-delay: 10s; */
+            animation-iteration-count: infinite;
+            float: left;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Box
+    </div>
+    <div class="container">
+        Box
+    </div>
+    <div class="container">
+        Box
+    </div>
+    <div class="container">
+        Box
+    </div>
+</body>
+
+</html>

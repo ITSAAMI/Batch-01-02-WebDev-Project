@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Random Function</title>
+</head>
+
+<body>
+    <script>
+        // console.log(Math.random());
+
+        // console.log(Math.floor(Math.random() * 10));
+        // console.log(Math.floor(Math.random() * 10)) + 1;
+        // console.log(Math.floor(Math.random() * 100));
+
+
+        // function rendom1(max, min) {
+        //     return Math.floor(Math.random() * (max - min + 1) + min)
+        // }
+
+
+
+
+
+        // console.log(rendom1(3, 7));
+
+
+
+        var sabeelcars = ["Auto Rakha", "Mehran", "Sohrab Cycle", "Yamaha Motercycle 1990 Model", "Tez Raftar", "Loder 250 CC"];
+
+        // sabeelcars.forEach(element => {
+        //     console.log(element);
+        // });
+
+        // console.log(sabeelcars[5]);
+
+
+        // console.log(sabeelcars.join("*"));
+
+        // for (let index = 0; index < sabeelcars.length; index++) {
+        //     let element = sabeelcars[index];
+        //     console.log(element);
+
+        // }
+
+
+        // while () {
+
+        // }
+
+        // do {
+
+        // } while (condition);
+
+
+
+
+
+
+        var max = 10;
+        var min = 1;
+        function randomizer(max, min) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var x = randomizer(max, min);
+
+        // console.log(x);
+
+
+        // var arr = ["AMIR", "HAYAT", "CLASS 10"];
+
+        // arr.forEach(element => {
+        //     console.log(element);
+        // });
+    </script>
+</body>
+
+</html>

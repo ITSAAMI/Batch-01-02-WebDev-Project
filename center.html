@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Center HTML Element</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #cover_image {
+            opacity: 1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .text {
+            position: absolute;
+            top: 40%;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            font-size: 90px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        #insta {
+            width: 5em;
+            position: absolute;
+            top: 42%;
+            left: 350px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .secondImage {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: -50%;
+            top: 50px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            Amir Hayat
+        </div>
+        <img src="../HTML/image/backgroundwall.jpg" id="cover_image" alt="Cover Image">
+
+    </div>
+    <div class="image">
+        <img src="../HTML/image/512x512-logo-27159.png" id="insta">
+    </div>
+    <!-- <div class="secondImage">
+        <img src="../HTML/image/pexels-david-bartus-4418915.jpg">
+    </div> -->
+</body>
+
+</html>

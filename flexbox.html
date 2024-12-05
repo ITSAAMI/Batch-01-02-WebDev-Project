@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Flex Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            display: flex;
+            background-color: dodgerblue;
+            width: 100vw;
+            height: 100vh;
+            flex-direction: row-reverse;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            align-items: center;
+            /* flex-wrap: wrap-reverse; */
+            flex-wrap: wrap;
+            flex-flow: row nowrap;
+
+        }
+
+        .items {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            font-size: 32px;
+            background-color: #f1f1f1;
+            border: 1px solid black;
+            margin: 2px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #item-5 {
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="item-1">1</div>
+        <div class="items" id="item-2">2</div>
+        <div class="items" id="item-3">3</div>
+        <div class="items" id="item-4">4</div>
+        <div class="items" id="item-5">4</div>
+        <div class="items" id="item-6">5</div>
+        <div class="items" id="item-7">7</div>
+    </div>
+</body>
+
+</html>

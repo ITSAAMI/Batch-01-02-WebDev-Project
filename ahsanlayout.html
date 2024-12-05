@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Layouts and Float Properties Testing</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-size: 23px;
+        }
+
+        .container {
+            width: 60%;
+            margin: auto;
+            border: 2px solid purple;
+            margin-top: 40px;
+
+        }
+
+        .item {
+            border: 5px solid rgb(138, 101, 240);
+            background-color: rgb(239, 247, 166);
+            padding: 12px 4px;
+
+        }
+
+        #fruit {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        #computer {
+            width: 50%;
+            float: right;
+            box-sizing: border-box;
+
+        }
+
+        #stationery {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p class="parafruits">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quaerat modi voluptas tenetur
+                explicabo quibusdam natus dolorum
+
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p class="paracomputer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quaerat modi voluptas teneturLorem
+                ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            </p>
+        </div>
+        <div id="stationery" class="item">
+            <h3>Stationery</h3>
+            <p class="parastationery">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quaerat modi voluptas tenetur
+                explicabo quibusdam natus dolorum voluptate, sapiente error optio. Accusantium animi accusamus nostrum
+                ab voluptates harum ratione obcaecati quibusdam ad.
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

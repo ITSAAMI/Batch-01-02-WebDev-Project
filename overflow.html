@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Overflow - Testing CSS Property</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        img.img1 {
+            width: 20%;
+            height: auto;
+            float: right;
+        }
+
+        #one {
+            width: 80%;
+            height: 155px;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            font-size: 32px;
+            clear: both;
+        }
+
+        img.img2 {
+            width: 20%;
+            height: auto;
+            float: left;
+
+        }
+
+        #two {
+            width: 80%;
+            height: 155px;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            font-size: 32px;
+            float: right;
+            display: inline;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="con">
+        <img src="../HTML/image/1.jpg" class="img1">
+        <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic consectetur ducimus impedit
+            dolore
+            perferendis soluta quaerat asperiores at nostrum.</p>
+    </div>
+    <div class="con">
+        <img src="../HTML/image/1.jpg" class="img2">
+        <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic consectetur ducimus impedit
+            dolore
+            perferendis soluta quaerat asperiores at nostrum.</p>
+    </div>
+</body>
+
+</html>

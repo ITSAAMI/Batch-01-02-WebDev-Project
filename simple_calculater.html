@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            /* margin-top: 40px; */
+            width: 24.7%;
+            margin: 40px auto;
+            /* background-color: red; */
+            box-shadow: 2px 2px #ccc;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+
+        }
+
+        form {
+            display: inline;
+
+        }
+
+        #result {
+            font-family: digital-7;
+            font-size: 67px;
+            background-color: #A8C64E;
+            margin: 20px;
+            width: 80%;
+            margin-left: 30px;
+            height: 80px;
+            /* margin-left: 10px; */
+        }
+
+        .btn {
+            width: 68px;
+            height: 68px;
+            border-radius: 25px;
+            margin: 4px;
+            font-size: 32px;
+        }
+
+        .btn:active {
+            background-color: #ccc;
+        }
+
+        .buttons_div {
+            margin-left: 10px;
+        }
+
+        #solarpannel {
+            background-color: rgb(92, 89, 89);
+            width: 80px;
+            margin: 10px;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+
+            <input type="text" id="solarpannel" value="0" disabled>
+            <input type="text" id="result" value="0" disabled>
+            <br>
+            <div class="buttons_div">
+                <input type="button" class="btn " value="1" onclick="appendToResult('1')">
+                <input type="button" class="btn " value="2" onclick="appendToResult('2')">
+                <input type="button" class="btn " value="3" onclick="appendToResult('3')">
+                <input type="button" class="btn ops " value="+" onclick="appendToResult('+')">
+                <br>
+                <input type="button" class="btn " value="4" onclick="appendToResult('4')">
+                <input type="button" class="btn " value="5" onclick="appendToResult('5')">
+                <input type="button" class="btn " value="6" onclick="appendToResult('6')">
+                <input type="button" class="btn ops " value="-" onclick="appendToResult('-')">
+                <br>
+                <input type="button" class="btn " value="7" onclick="appendToResult('7')">
+                <input type="button" class="btn " value="8" onclick="appendToResult('8')">
+                <input type="button" class="btn " value="9" onclick="appendToResult('9')">
+                <input type="button" class="btn ops " value="*" onclick="appendToResult('*')">
+                <br>
+                <input type="button" class="btn " value="0" onclick="appendToResult('0')">
+                <input type="button" class="btn clear" value="C" onclick="clearResult()">
+                <input type="button" class="btn ops" value="=" onclick="calculate()">
+                <input type="button" class="btn ops " value="/" onclick="appendToResult('/')">
+                <br>
+            </div>
+        </form>
+    </div>
+    <script>
+        var val
+        function appendToResult(val) {
+            if (document.getElementById('result').value == 0) {
+                document.getElementById('result').value = val;
+            }
+            else {
+                document.getElementById('result').value += val;
+
+            }
+        }
+
+        function calculate() {
+            document.getElementById('result').value = eval(document.getElementById('result').value);
+        }
+        function clearResult() {
+            document.getElementById('result').value = 0;
+        }
+    </script>
+</body>
+
+</html>

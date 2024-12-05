@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Loops</title>
+</head>
+
+<body>
+    i am Body
+    <script>
+        // var arr = ["sameer", "ahsan", "Sanabil", "Moizaa"];
+        // let i = 0;
+        // for (i of arr) {
+        //     document.write(i + "<br>");
+        // }
+        // console.log(arr[0]);
+        // console.log(arr[1]);
+
+        // for (var i = 0; i < arr.length; i++) {
+        //     let element = arr[i];
+        //     console.log(element);
+        // }
+        // let i = 0;
+        // for (; i < arr.length;) {
+        //     let element = arr[i];
+        //     console.log(element);
+        //     i++;
+        // }
+        // let i = 0;
+        // while (i > arr.length) {
+        //     console.log(arr[i]);
+        //     i++;
+        // }
+        // let i = 0;
+        // do {
+        //     console.log(arr[i]);
+        //     i++;
+        // } while (i > arr.length);
+
+
+        var object = { name: "khan gul", fname: "Bahadar Gul", edu: "PHD", age: "30", address: "Peshawar, Pakistan" };
+
+
+        for (let key in object) {
+            if (Object.hasOwnProperty.call(object, key)) {
+                let element = object[key];
+                console.log(element);
+
+            }
+        }
+
+        for (const key in object) {
+            if (Object.hasOwnProperty.call(object, key)) {
+                const element = object[key];
+                
+            }
+        }
+    </script>
+</body>
+
+</html>

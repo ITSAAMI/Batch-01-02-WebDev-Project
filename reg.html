@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registartion</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            color: aliceblue;
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+            font-size: 22px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        li a:hover {
+            background-color: azure;
+            color: black;
+            padding: 20px;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+
+        body {
+            background-image: url("image/backgroundwall.jpg");
+        }
+
+        #form1 {
+            background-color: rgb(17, 17, 17);
+            color: aliceblue;
+            width: 70%;
+            margin-top: 5px;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px;
+
+        }
+
+        #sub1,
+        #reset1 {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(17, 17, 17);
+            color: aliceblue;
+            border: 2px solid white;
+            width: 160px;
+        }
+
+        #sub1:hover,
+        #reset1:hover {
+            font-size: 23px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(202, 218, 64);
+            width: 170px;
+            height: 40px;
+        }
+
+
+        option,
+        select,
+        input {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+            #sub1:hover {
+                font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: aliceblue;
+                color: rgb(17, 17, 17);
+
+            }
+
+            #fs1 {}
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">About us</a></li>
+
+    </ul>
+    <center>
+        <form id="form1">
+            <fieldset id="fs1">
+                <legend>Registartion From - Logic Gigs Pvt Ltd</legend>
+                <br>
+                <label>Name:<span style=" color: red;">*</span></label>
+                <input type="text" name="name"><br><br>
+                <label>Email:<span style="color: red;">*</span></label>
+                <input type="email" name="email"><br><br>
+                <label>Password:<span style="color: red;">*</span></label>
+                <input type="password" name="pass"><br><br>
+                <label>D.O.B:<span style="color: red;">*</span></label>
+                <input type="date" name="dob"><br><br>
+                <label>Whatsapp:<span style="color: red;">*</span></label>
+                <input type="number" name="wa"><br><br>
+                <label>Address:<span style="color: red;">*</span></label>
+                <input type="text" name="address"><br><br>
+                <label>Gender:<span style="color: red;">*</span></label>
+                <input type="radio" name="gen"><label>Male</label>
+                <input type="radio" name="gen"><label>Female</label>
+                <br><br>
+                <label>Country:</label>
+                <select>
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>Afghanistan</option>
+                    <option>Korea </option>
+                </select><br><br>
+                <input type="submit" name="submit" value="Submit" id="sub1">
+                <input type="reset" value="Reset" name="reset" id="reset1">
+
+
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

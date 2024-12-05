@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>List Items - CSS </title>
+    <style>
+        body {
+            counter-reset: counter;
+        }
+
+        h1::before {
+            content: "Chapter " counter(counter) ": ";
+            counter-increment: counter;
+        }
+
+        h1 {
+            counter-reset: subcounter;
+        }
+
+        h2::before {
+            content: counter(counter) "." counter(subcounter) ": ";
+            counter-increment: subcounter;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML and CSS</h1>
+    <h2>Html5</h2>
+    <h2>CSS3</h2>
+    <h2>Bootstrape 4</h2>
+
+    <h1>Javascript</h1>
+    <h2>Javascript</h2>
+    <h2>Jquerry</h2>
+    <h2>Ajax</h2>
+
+    <h1>Server Side Languges</h1>
+    <h2>PHP</h2>
+    <h2>MySQL</h2>
+</body>
+
+</html>

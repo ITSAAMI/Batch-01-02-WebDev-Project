@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Border Image Property</title>
+    <style>
+        .box {
+            /* border: 10px solid; */
+            padding: 40px 30px;
+            width: 50%;
+            margin: auto;
+            background-color: yellow;
+            font-size: 32px;
+            margin-top: 50px;
+            border-image-source: url(flower.png);
+            border-image-slice: 35%;
+            border-image-repeat: round;
+            border-image-width: 30px;
+            border-image-outset: 25px;
+        }
+
+        .box:hover {
+            transform: scale(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, adipisci.
+    </div>
+</body>
+
+</html>

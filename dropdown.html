@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 32px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .btn {
+            background-color: rgb(148, 238, 148);
+            padding: 30px 50px;
+            border-radius: 40px;
+        }
+
+        .btn:hover {
+            background-color: rgb(8, 253, 8);
+            font-size: 33px;
+        }
+
+        .hover_content {
+            border: solid rgba(0, 0, 0, 0.2);
+            position: absolute;
+            padding: 22px;
+            border-radius: 40px;
+            display: none;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+        }
+
+        ul {
+            list-style-type: none;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        li a:hover {
+
+            color: #000;
+            background-color: yellow;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+
+        .dropdown:hover .hover_content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button class="btn">Hover me!</button>
+        <div class="hover_content">
+            <ul>
+                <li><a href="#">Project 01: List Items</a></li>
+                <li><a href="#">Project 02: Student Card</a></li>
+                <li><a href="#">Project 03: Chessboard Game</a></li>
+                <li><a href="#">Project 04: Merit Certificate </a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

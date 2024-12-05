@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Now in JS</title>
+    <style>
+        #time {
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="time">
+        01 : 01 : 01
+    </div>
+    <script>
+
+        function timenowfun() {
+            let timenow = new Date();
+
+            document.getElementById('time').innerHTML = timenow.getHours() + " : " + timenow.getMinutes() + " : " + timenow.getSeconds();
+        }
+
+        setInterval(timenowfun, 100);
+
+    </script>
+</body>
+
+</html>

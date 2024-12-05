@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            color: #fff;
+        }
+
+        .pro_dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .pro_content {
+            position: absolute;
+        }
+
+        .pro_content a {
+            display: block;
+        }
+
+        .pro_dropdown:hover .pro_content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li class="pro_dropdown">
+            <a href="#">Projects</a>
+            <div class="pro_content">
+                <a href="#">List Items</a>
+                <a href="#">Student Card</a>
+                <a href="#">Chessboard</a>
+                <a href="#">Certificate</a>
+            </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About us</a></li>
+    </ul>
+</body>
+
+</html>

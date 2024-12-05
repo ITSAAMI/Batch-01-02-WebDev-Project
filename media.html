@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .items {
+            display: none;
+        }
+
+        @media(max-width:414px) {
+            #item-1 {
+                display: block;
+                background-color: yellow;
+            }
+        }
+
+        @media(min-width:414px) and (max-width:768px) {
+            #item-2 {
+                display: block;
+                background-color: green;
+                color: aliceblue;
+            }
+        }
+
+        @media(min-width:768px) and (max-width:1000px) {
+            #item-3 {
+                display: block;
+                background-color: rgb(41, 38, 233);
+                color: aliceblue;
+            }
+        }
+
+        @media(min-width:1000px) {
+            #item-4 {
+                display: block;
+                background-color: rgb(255, 67, 42);
+                color: aliceblue;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="items" id="item-1">
+        Hello i am Iphone X Max
+    </div>
+    <div class="items" id="item-2">
+        Hello i am Tablet
+    </div>
+    <div class="items" id="item-3">
+        Hello i am Desktop Computer
+    </div>
+    <div class="items" id="item-4">
+        Hello i am WideScreen Computer
+    </div>
+</body>
+
+</html>
