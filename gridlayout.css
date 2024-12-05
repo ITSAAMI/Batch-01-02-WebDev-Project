@@ -1,0 +1,60 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 35% 10% 110% 10%;
+    grid-template-areas:
+        'header header header header'
+        'navbar navbar navbar navbar '
+        'aside main main main'
+        'footer footer footer footer ';
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    color: #fff;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+.hight1 {
+    line-height: 50px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(241, 9, 9);
+    color: #fff;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(164, 134, 247);
+    color: #fff;
+}
+
+pre {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: #fff;
+}
+
+.layout {
+    display: grid;
+    padding: 10px 20px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+
+}
